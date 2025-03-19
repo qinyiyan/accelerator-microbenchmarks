@@ -60,11 +60,15 @@ ATTENTION_BENCHMARK_MAP = {
     ),
     "keras_attention": "benchmark_attention.keras_attention_benchmark",
 }
+HBM_BENCHMARK_MAP = {
+    "single_chip_hbm_copy": "benchmark_hbm.single_chip_hbm_copy",
+}
 BENCHMARK_MAP = {}
 BENCHMARK_MAP.update(COLLECTIVE_BENCHMARK_MAP)
 BENCHMARK_MAP.update(MATMUL_BENCHMARK_MAP)
 BENCHMARK_MAP.update(CONVOLUTION_BENCHMARK_MAP)
 BENCHMARK_MAP.update(ATTENTION_BENCHMARK_MAP)
+BENCHMARK_MAP.update(HBM_BENCHMARK_MAP)
 
 
 # Mapping from dtype string to actual dtype object
