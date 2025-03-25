@@ -3,8 +3,6 @@
 
 from typing import Any, Dict, Tuple
 
-
-# pylint: disable=g-importing-member
 from benchmark_utils import simple_timeit
 import jax
 import jax.numpy as jnp
