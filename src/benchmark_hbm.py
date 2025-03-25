@@ -42,7 +42,7 @@ def single_chip_hbm_copy(num_elements: int, dtype: jnp.dtype) -> Dict[str, Any]:
   return {"average_time_ms": average_time_ms}
 
 
-def single_host_naive_matmul_calculate_metrics(
+def single_chip_hbm_copy_calculate_metrics(
     num_elements: int, dtype: jnp.dtype, average_time_ms: float
 ) -> Dict[str, Any]:
   """Calculates the metrics for the single chip hbm copy benchmark."""
