@@ -51,7 +51,7 @@ def single_chip_hbm_copy_calculate_metrics(
   metadata, metrics = get_metrics_helper(params)
 
   # Calculate FLOPs
-  tensor_size_bytes = num_elements * dtype.itemsize
+  tensor_size_bytes = num_elements * dtype.dtype.itemsize
 
   tensor_size_gbytes = (tensor_size_bytes * 2) / 10**9
   average_time_s = average_time_ms / 10**3
