@@ -23,7 +23,7 @@ def simple_timeit(f, *args, tries=10, task=None):
         outcomes_ms.append(1000 * (e - s).total_seconds())
 
     average_time_ms = sum(outcomes_ms) / len(outcomes_ms)
-    print(f"{task}: average time milliseconds: {average_time_ms:.2f}")
+    # print(f"{task}: average time milliseconds: {average_time_ms:.2f}")
     return average_time_ms
 
 
